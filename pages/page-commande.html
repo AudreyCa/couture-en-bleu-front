@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style-page-commande.css" />
+    <link rel="stylesheet" href="../css/style-header.css" />
+    <link rel="stylesheet" href="../css/style-footer.css" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon"/>
+    <title>Couture en bleu | Commandes</title>
+  </head> 
+  <body>
+        <!-- /////////////// HEADER ///////////////// -->
+        <header>
+          <div class="ac_facebook-CTA">
+            <a href="https://www.facebook.com/coutureenbleu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          
+          <div class="AC_logoHeader">
+            <a href="page-accueil.html"><img src="../assets/Logo-detoure.png" alt="Logo de la couture en bleu" /></a>
+          </div>
+    
+          <div class="ac_instagram-CTA">
+            <a href="https://www.instagram.com/lacoutureenbleu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+    
+          <div class="AC_panier">
+            <a href="page-commande.html"><i class="fa-solid fa-basket-shopping"></i></a>
+          </div>
+    
+    
+    
+          <nav id="AC_menu">
+            <!--Menu burger-->
+            <div class="AC_menu-icon-wrapper">
+              <div class="AC_menu-icon" onclick="toggleCssMenu(this)">
+                <div class="AC_three-line">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+    
+            <!--Menu avec les pages-->
+            <div id="AC_cssmenu">
+              <ul>
+                <li><a href="page-accueil.html">Accueil</a></li>
+                <li><a href="page-collection.html">Mes produits</a></li>
+                <li><a href="Page-histoire.html">Mon histoire</a></li>
+                <li><a href="page-contact.html">FAQ & Contact</a></li>
+              </ul>
+    
+              <div class="AC_iconsMenu">
+                <a href="https://www.instagram.com/lacoutureenbleu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/coutureenbleu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <div></div>
+                <a href="page-commande.html"><i class="fa-solid fa-basket-shopping"></i></a>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+
+
+    <main>
+
+  <section class="ac_entete" id="haut">
+    <!-- Section entête avec photo -->
+    <h1>Récapitulatif de commande</h1>
+  </section>
+
+  
+<section class="ac_avecBg">
+
+  
+  <!-- Partie du panier : recap commande -->
+  
+  <div class="recap_panier">
+        
+    <h3> Votre liste de souhaits</h3>
+  
+    <div class="produit_recap">
+      
+        <div class="colonne1">
+          <img src="../assets/Photos/Marie-La-Souris.jpeg" alt="photo du produit">
+        </div>
+
+        <div class="colonne2">
+          <h4>Sac cartable rose</h4>
+
+          <div class="ac_quantite">
+            <label for="ac_input_qte">Quantité : </label>
+            <input type="number" value="1" min="0" max="20" id="ac_input_qte"/>
+          </div>
+
+          <!-- ATTENTION : Prix à l'unité pour le calcul du prix total = non visible pour l'utilisateur -->
+          <p class="prix_unite_invisible">20</p>
+          
+          <div class="ac_totalPrix">
+            <p>Prix total : </p>
+            <!-- ATTENTION, modifier le tarif en fonction de l'article -->
+            <p class="tarif"> 20 </p>
+            <p> €</p>
+          </div>
+                      
+        </div>
+
+        <div>
+          <h4>Personnalisation ?</h4>
+          <div class="ac_input-check">
+            <input type="radio" id="ac_btn_radio_O" name="radio" value="check">
+            <label for="ac_btn_radio">Oui : </label>
+            <input type="text" class="ac_inputText">
+          </div>
+          <div class="ac_input-check">
+            <input type="radio" id="ac_btn_radio_N" name="radio" value="check">
+            <label for="ac_btn_radio">Non</label>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="ac_blocLivraison">
+          <h4>Livraison : </h4>
+          <div class="ac_input-check">
+            <input type="radio" id="ac_btn_livraison_not" name="liv" value="texte">
+            <label for="ac_btn_radio">Je récupère mon achat sur place</label>
+          </div>
+          <div class="ac_input-check">
+            <input type="radio" id="ac_btn_livraison_okai" name="liv" value="texte">
+            <label for="ac_btn_radio">Je souhaite que mon achat soit livré</label>
+          </div>
+        </div>
+        
+
+
+  </div>
+
+    <div class="ac_btnValidation">
+      <input class="ac_btnFin" type="submit" value="Je valide ma liste de souhaits" />
+    </div>
+      
+  </div>
+
+
+    <!-- Formulaire -->
+    <div class="ac_formulaire">
+  
+        <h3> Veuillez entrer vos informations</h3>
+              
+        <div class="ac_contact">
+              
+              <form action="" method="get" autocomplete="on">
+                
+                <label for="" class="ac_nom">
+                  <input class="ac_name" type="text" name="Name" placeholder="" required />
+                  <span>Nom / Prénom</span>
+                </label>
+    
+                <label for="" class="ac_adMail">
+                  <input class="ac_email" type="email" name="Email" placeholder="" required />
+                  <span>Mail</span>
+                </label>
+    
+                <label for="" class="ac_obj">
+                  <input class="ac_objet" type="text" name="object" placeholder="" required />
+                  <span>Numéro de téléphone</span>
+                </label>
+    
+                <label for="" class="ac_msg">
+                  <textarea class="ac_zoneMessage" placeholder="" required></textarea>
+                  <span>Si vous souhaitez me laisser un message</span>
+                </label>
+
+                <div class="ac_btnFinCT">
+                  <input class="ac_btnFin btnFinal" type="submit" value="Envoyer" />
+                </div>
+
+              </form>
+        </div>
+
+    </div>
+  
+    <div class="retour">
+      <div>
+        <a href="#haut">
+          <p class="up">Haut de page</p>
+          <i class="fa-solid fa-arrow-turn-up"></i>
+        </a>
+      </div>
+    </div>
+      
+    </main>
+
+
+    <footer>
+      <div class="AC_logoFooter">
+        <img src="../assets/Logo-detoure.png" alt="Logo de la couture en bleu" />
+        <div class="AC_followMe">
+          <p>suivez-moi</p>
+          <div class="AC_rsFooter">
+            <a href="https://www.instagram.com/lacoutureenbleu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/coutureenbleu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="AC_feedInsta">
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-3bffa356-234e-428d-9029-58ead8257072"></div>
+      </div>
+
+      <div class="adresse">
+        <h3>Coordonées</h3>
+        <p>(En contrat couveuse)</p>
+        <p>320, rue Sorbiers</p>
+        <p>74300 Thyez</p>
+        <p>Tel: 06 XX XX XX XX</p>
+        <p>Mail : XXXXXX@gmail.com</p>
+      </div>
+
+      <div class="planSite">
+        <h3>Plan du site</h3>  
+        <a href="page-accueil.html"><p>Accueil</p></a>
+        <a href="page-collection.html"><p>Mes produits</p></a>
+        <a href="page-histoire.html"><p>Mon histoire</p></a>
+        <a href="page-contact.html"><p>FAQ & contact</p></a>
+      </div>
+
+      <!-- <div class="tchat">
+        <button>Tchat</button>
+      </div> -->
+
+      <div class="mentionLeg">
+        <p>@ 2022 <a href="https://digifab.fr" target="_blank">Digifab</a> - <a href="page-politiques-confidentialite.html">Mentions légales & politiques de confidentialité</a></p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/c544969e79.js" crossorigin="anonymous"></script>
+  <script src="../js/general.js"></script>
+  <script src="../js/page-commande.js"></script>
+  
+</html>

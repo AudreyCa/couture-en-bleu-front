@@ -1,0 +1,64 @@
+/* Police Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Police "Brittany Signature" */
+@font-face {
+  font-family: "Brittany Signature";
+  src: url("../../css/police/BrittanySignature.ttf");
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-image: url(../assets/background404.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.1s ease;
+}
+
+.forme404 {
+  width: clamp(25rem, 18.913rem + 27.8261vw, 45rem);
+  height: clamp(25rem, 18.913rem + 27.8261vw, 45rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/photo-background-404.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.forme404 h1 {
+  color: white;
+  font-size: clamp(2.8125rem, 2.5272rem + 1.3043vw, 3.75rem);
+  margin: 5px 0;
+}
+.forme404 .chiffres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forme404 .chiffres .chiffre {
+  background-color: white;
+  border-radius: 50%;
+  width: clamp(2.8125rem, 1.9565rem + 3.913vw, 5.625rem);
+  height: clamp(2.8125rem, 1.9565rem + 3.913vw, 5.625rem);
+  text-align: center;
+  font-weight: 600;
+  color: #2d4899;
+  font-size: clamp(2.5rem, 2.0833rem + 1.9048vw, 3.75rem);
+}
+.forme404 p {
+  color: white;
+  font-size: clamp(0.9375rem, 0.7292rem + 0.9524vw, 1.5625rem);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 10px 0 10px;
+}/*# sourceMappingURL=style-404.css.map */

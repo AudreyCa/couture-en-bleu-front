@@ -1,0 +1,81 @@
+/* Police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Police "Brittany Signature" */
+@font-face {font-family: 'Brittany Signature'; src: url('../../css/police/BrittanySignature.ttf');}
+  
+html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: white;
+    // Remplacer par un fond avec les svg.
+}
+
+// section image d'accueil avec titre
+.ac_entete {
+    background-image: url("../assets/page-histoire.png");
+    background-position: top;
+    opacity: 0.8;
+    width: 100vw;
+    height:350px;
+    background-position: right;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+}
+
+// section principale avec Bg et texte
+.ac_backgroundConf {
+  background-image: url(../assets/Icones/7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.ac_politiqueConf {
+  margin: 5%;
+  padding: 5%;
+  color:white;
+  background-color: #2d4899cd;
+  border-radius: 20px;
+}
+
+.retour {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+  div {
+    display: flex;
+    width: 150px;
+        a {
+        text-decoration: none;
+        display: flex;
+        p {
+          color: #2d4899;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+        i {
+          font-size: 15px;
+          color: #2d4899;
+          margin-top: 10px;
+        }
+      }
+  }
+}

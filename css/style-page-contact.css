@@ -1,0 +1,241 @@
+/* Police Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Police "Brittany Signature" */
+@font-face {
+  font-family: "Brittany Signature";
+  src: url("../../css/police/BrittanySignature.ttf");
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ac_entete {
+  background-image: url("../assets/Carte visite multiple.png");
+  width: 100vw;
+  height: 350px;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
+
+.ac_backgroundContact {
+  background-image: url(../assets/Icones/5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.bloc_faq {
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.ac_faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.ac_containerFAQ {
+  max-width: 320px;
+  margin: 10px;
+  display: inline;
+  position: relative;
+}
+
+.ac_rondQR {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #2d4899;
+  border-radius: 50%;
+  border: solid 3px white;
+  box-shadow: 1px 1px 10px rgba(45, 72, 153, 0.4078431373);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 25px;
+  color: White;
+  transition: all 1.5s ease;
+}
+.ac_rondQR .ac-lettreR {
+  display: none;
+}
+
+.ac_questionReponses {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(45, 72, 153, 0.4078431373);
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.ac_chevrons {
+  cursor: pointer;
+}
+.ac_chevrons .fa-chevron-up {
+  display: none;
+}
+
+.ac_teteQuestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.ac_question {
+  font-weight: 600;
+  font-size: 13px;
+  margin: 5px;
+}
+
+.ac_reponse p {
+  font-size: 0;
+  height: 0;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+#ac_input1,
+#ac_input2,
+#ac_input3,
+#ac_input4 {
+  display: none;
+}
+
+#ac_input1:checked + .ac_rondQR,
+#ac_input2:checked + .ac_rondQR,
+#ac_input3:checked + .ac_rondQR,
+#ac_input4:checked + .ac_rondQR {
+  transform: translateX(265px) rotate(360deg);
+  transition: all 1.5s ease;
+}
+
+#ac_input1:checked + .ac_rondQR .ac-lettreQ,
+#ac_input2:checked + .ac_rondQR .ac-lettreQ,
+#ac_input3:checked + .ac_rondQR .ac-lettreQ,
+#ac_input4:checked + .ac_rondQR .ac-lettreQ {
+  display: none;
+}
+
+#ac_input1:checked + .ac_rondQR .ac-lettreR,
+#ac_input2:checked + .ac_rondQR .ac-lettreR,
+#ac_input3:checked + .ac_rondQR .ac-lettreR,
+#ac_input4:checked + .ac_rondQR .ac-lettreR {
+  display: block;
+}
+
+#ac_input1:checked ~ .ac_reponse p,
+#ac_input2:checked ~ .ac_reponse p,
+#ac_input3:checked ~ .ac_reponse p,
+#ac_input4:checked ~ .ac_reponse p {
+  height: 100%;
+  opacity: 1;
+  font-size: 13px;
+  transition: all 0.8s ease-in-out;
+}
+
+#ac_input1:checked ~ .ac_teteQuestion .fa-chevron-down,
+#ac_input2:checked ~ .ac_teteQuestion .fa-chevron-down,
+#ac_input3:checked ~ .ac_teteQuestion .fa-chevron-down,
+#ac_input4:checked ~ .ac_teteQuestion .fa-chevron-down {
+  display: none;
+}
+
+#ac_input1:checked ~ .ac_teteQuestion .fa-chevron-up,
+#ac_input2:checked ~ .ac_teteQuestion .fa-chevron-up,
+#ac_input3:checked ~ .ac_teteQuestion .fa-chevron-up,
+#ac_input4:checked ~ .ac_teteQuestion .fa-chevron-up {
+  display: block;
+}
+
+.ac_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 10%;
+  padding-bottom: 50px;
+  width: 100vw;
+}
+.ac_contact h2 {
+  font-size: 50px;
+  color: #2d4899;
+  font-family: "Brittany Signature";
+}
+.ac_contact p {
+  font-weight: 500;
+  line-height: 5px;
+  text-align: center;
+  line-height: 25px;
+  margin: 20px;
+}
+.ac_contact .reseaux {
+  display: flex;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.ac_contact .reseaux a {
+  margin: 10px;
+  font-size: 40px;
+}
+.ac_contact .reseaux a:first-child {
+  color: #953cc5;
+}
+.ac_contact .reseaux a:last-child {
+  color: #0b7dec;
+}
+.ac_contact .reseaux a:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
+}
+
+.retour {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+}
+.retour div {
+  display: flex;
+  width: 150px;
+}
+.retour div a {
+  text-decoration: none;
+  display: flex;
+}
+.retour div a p {
+  color: #2d4899;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.retour div a i {
+  font-size: 15px;
+  color: #2d4899;
+  margin-top: 10px;
+}/*# sourceMappingURL=style-page-contact.css.map */

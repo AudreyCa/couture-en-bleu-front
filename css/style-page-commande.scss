@@ -1,0 +1,365 @@
+/* Police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Police "Brittany Signature" */
+@font-face {font-family: 'Brittany Signature'; src: url('../../css/police/BrittanySignature.ttf');}
+  
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+// section image d'accueil avec titre
+.ac_entete {
+    background-image: url("../assets/background-commande.png");
+    width: 100vw;
+    height:350px;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Section d'entete
+
+main {
+  background-image: url(../assets/Icones/6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+}
+
+// section bg, corps de texte, main sans entete
+
+.ac_avecBg {
+  background-image: url(../assets/Icones/6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.recap_panier > h3,
+.ac_formulaire > h3 {
+  // font-family: 'montserrat';
+  font-family: 'Brittany Signature';
+  font-size: 40px;
+  color: #2d4899;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+
+// section récapitulation des articles selectionné dans la whishlist
+.recap_panier {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  min-height: 100px;
+    .produit_recap {
+      display: flex;
+      align-items:flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 5px 20px;
+      background-color: #5c84b8;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 5px 14px 31px -1px rgba(45, 72, 153, 0.21);
+        div {
+          padding:  0px 20px 10px;
+          font-size: 13px;
+            img {
+              width: 100px;
+              height: 100px;
+            }
+            h4 {
+              font-size: 18px;
+              font-weight: 500;
+              color: white;
+              margin-bottom: 15px;
+            }
+            p {
+              line-height: 15px;
+            }
+            #ac_input_qte {
+              width: 40px;
+              margin-left: 10px;
+            }
+            #ac_input_qte::placeholder {
+              text-align: end;
+            }
+            .ac_input-check {
+              padding: 5px;
+            }
+            .ac_inputText {
+              width: 120px;
+              margin-left: 10px;
+            }
+        }
+        .colonne1 {
+          height: 140px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+        }
+        .colonne2 {
+          display: flex;
+          width: 180px;
+          flex-direction: column;
+          justify-content: start;
+            div {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+            }
+            .ac_quantite {
+              margin-top: 5px;
+            }
+            .ac_totalPrix {
+              margin-top: -10px;
+              .tarif {
+                margin: 0 5px 0 10px;
+              }
+            }
+        }
+
+    }
+}
+
+.ac_blocLivraison {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 20px 0;
+  background-color: #5c84b8;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 5px 14px 31px -1px rgba(45, 72, 153, 0.21);
+}
+
+.prix_unite_invisible {
+  display: none;
+}
+
+// bouton check de validation liste de souhait
+.ac_btnValidation {
+  width: 300px;
+  align-self: center;
+  background-color: #2d4899;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top : 30px;
+}
+
+.ac_btnValidation .ac_btnFin {
+  width: 300px;
+  display: block;
+  border: solid 1px #5c84b8;
+  border-radius: 30px;
+  background-color: #5c84b8;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transform: translate(-10px, -10px);
+  transition: all 0.4s;
+  font-family: 'montserrat';
+  font-size: 13px;
+  font-weight: 500;
+}
+.ac_btnValidation .ac_btnFin:hover {
+  transform: translate(0px, 0px);
+  letter-spacing: 1.8px;
+  color: white;
+}
+
+
+// Formulaire de commande ////////////////////////
+
+.ac_formulaire {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.ac_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ac_contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100vw;
+}
+.ac_contact form label {
+  position: relative;
+  width: 60%;
+}
+.ac_formulaire .ac_contact form label input:not(.ac_btnFin),
+.ac_formulaire .ac_contact form label textarea {
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+  font-size: 13px;
+  background-color: #5c84b8;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(45, 72, 153, 0.4078431373);
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+.ac_formulaire .ac_contact form label textarea {
+  height: 200px;
+}
+.ac_formulaire .ac_contact form label span {
+  position: absolute;
+  top: 0;
+  padding: 13px;
+  pointer-events: none;
+  font-size: 15px;
+  color: white;
+  transition: all 0.6s ease;
+}
+.ac_formulaire .ac_contact form label span.active {
+  color: white;
+  transform: translate(50px, -5px);
+  background-color: #5c84b8;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+  border-radius: 3px;
+  padding: 0 5px 0;
+  font-size: 0.7em;
+  transition-duration: 0.5s;
+}
+.ac_formulaire .ac_contact form .ac_zoneMessage {
+  resize: vertical;
+}
+.ac_formulaire .ac_contact form .ac_btnFinCT {
+  width: 130px;
+  align-self: center;
+  background-color: #2d4899;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ac_formulaire .ac_contact form .ac_btnFinCT .ac_btnFin {
+  width: 130px;
+  display: block;
+  border: solid 1px #5c84b8;
+  border-radius: 30px;
+  background-color: #5c84b8;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transform: translate(-10px, -10px);
+  transition: all 0.4s;
+  font-family: 'montserrat';
+  font-size: 13px;
+  font-weight: 500;
+}
+.ac_formulaire .ac_contact form .ac_btnFinCT .ac_btnFin:hover {
+  transform: translate(0px, 0px);
+  letter-spacing: 1.8px;
+  color: white;
+}
+
+
+.ac_btnFinCT {
+  width: 130px;
+  align-self: center;
+  background-color: #2d4899;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ac_btnFinCT .ac_btnFin {
+  width: 130px;
+  display: block;
+  border: solid 1px #5c84b8;
+  border-radius: 30px;
+  background-color: #5c84b8;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transform: translate(-10px, -10px);
+  transition: all 0.4s;
+  font-family: 'montserrat';
+  font-size: 13px;
+  font-weight: 500;
+}
+.ac_btnFinCT .ac_btnFin:hover {
+  transform: translate(0px, 0px);
+  letter-spacing: 1.8px;
+  color: white;
+}
+
+
+// barre de retour en haut de page
+
+.retour {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+  div {
+    display: flex;
+    width: 150px;
+        a {
+        text-decoration: none;
+        display: flex;
+        p {
+          color: #2d4899;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+        i {
+          font-size: 15px;
+          color: #2d4899;
+          margin-top: 10px;
+        }
+      }
+  }
+}
+

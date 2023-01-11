@@ -1,0 +1,222 @@
+/* Police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Police "Brittany Signature" */
+@font-face {font-family: 'Brittany Signature'; src: url('../../css/police/BrittanySignature.ttf');}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.Em_bg_head {
+  background-image: url(../assets/Photos/idees-cadeau-naissance-fille-.png);
+  width: 100vw;
+  height:350px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Em_bg_head h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+/* Le main avec les collections */
+main {
+  background-image: url(../assets/Photos/Background-collection-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+
+// Les carousels :
+
+// Ce container correspond au fond de l'ensemble des carousels
+.container {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Titre de chaque carousel
+.title h2 {
+text-align: center;
+font-size: 35px;
+color: #ca975e;
+font-style: italic;
+}
+
+// personnalisation des container de chaque carousel
+.carousel {
+max-width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+
+// personalisation de chaque carte du carousel
+.item {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: transform 0.4s ease;
+cursor: pointer;
+}
+
+// animation au hover de la carte
+.item:hover {
+transform: scale(1.05);
+transition: all ease-out 0.3s;
+}
+
+// div container de l'image
+.item__image {
+width: 150px;
+height: 150px;
+background-color: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+// image même
+.item__image img {
+  width: 90%;
+  height: auto;
+}
+
+.item__image a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// titre de l'image de la carte même
+.item__title h3 {
+width: 200px;
+text-align: center;
+font-size: 20px;
+color: #ca975e;
+font-style: italic;
+padding:  0px 25px;
+margin-bottom: 5px;
+}
+
+.items {
+  position: relative;
+}
+
+
+
+
+// Caroussel après le Jasacript 
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__container {
+  transition: all .4s;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel__container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.carousel__item {
+  float: left;
+}
+
+.carousel__next,
+.carousel__prev {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ca975e url('../assets/Icones/right.svg') center center no-repeat;
+  background-size: 20px 20px;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -20px;
+  right: 5px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.carousel__next:hover,
+.carousel__prev:hover {
+  transform: scale(1.2);
+}
+
+.carousel__prev {
+  background: #ca975e url('../assets/Icones/left.svg') center center no-repeat;
+  background-size: 20px 20px;
+  right: auto;
+  left: 5px;
+}
+
+.carousel__next--hidden, 
+.carousel__prev--hidden {
+  opacity: 0;
+}
+
+
+
+
+// bouton retour haut de page
+
+.retour {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+  // margin-top : 30px;
+}
+
+.retour div {
+  display: flex;
+  width: 150px;
+}
+
+.retour a {
+  text-decoration: none;
+  display: flex;
+}
+
+.retour p {
+  color: #2d4899;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.retour i {
+  font-size: 15px;
+  color: #2d4899;
+  margin-top: 10px;
+}

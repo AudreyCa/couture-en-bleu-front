@@ -1,0 +1,313 @@
+/* Police Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Police "Brittany Signature" */
+@font-face {
+  font-family: "Brittany Signature";
+  src: url("../../css/police/BrittanySignature.ttf");
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*  Section entete avec photo et titre */
+.Em_bg_head {
+  background-image: url(../assets/Photos/Bandeau-head-sac-prd.jpg);
+  width: 100vw;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Em_bg_head h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Section main avec background et fiche produit + coup de coeur */
+main {
+  background-image: url(../assets/Icones/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+main > h2,
+.Cp_Coeur_Title {
+  text-align: center;
+  font-size: 35px;
+  color: #ca975e;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.bloc_produit {
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+/* section de la fiche produit simple */
+.produitFiche {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Produit, partie gauche */
+.fiche_Prd_G,
+.fiche_Prd_D {
+  width: 45%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fiche_Prd_G {
+  flex-direction: column;
+}
+
+/* grande image produit */
+.carte_Principale {
+  max-width: 280px;
+  height: 400px;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.carte_Principale:hover {
+  transform: scale(1.1);
+}
+
+.carte_Principale .img_card {
+  max-height: 400px;
+  max-width: 300px;
+}
+
+/* petites images produit */
+.Em_Product_Page {
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
+}
+
+.Img-Sec-1,
+.Img-Sec-2,
+.Img-Sec-3,
+.Img-Sec-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img-Sec-1:hover,
+.Img-Sec-2:hover,
+.Img-Sec-3:hover,
+.Img-Sec-4:hover {
+  transform: scale(1.1);
+}
+
+.carte-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80px;
+  height: 80%;
+  background-color: none;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.img_card-sec {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  max-width: 60px;
+}
+
+/* Produit, partie droite */
+.description,
+.cta,
+.entretien {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.description {
+  max-width: 320px;
+  max-height: 350px;
+  background: #2d4899;
+  border-radius: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px 40px 70px;
+}
+.description h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ca975e;
+  text-shadow: -1.5px 1px 2px white;
+}
+
+.ac_prixArticle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #cfbaa2;
+}
+
+.ac_perso {
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 0;
+  color: #d69d5c;
+}
+
+.cta {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  max-width: 150px;
+  height: 80px;
+  background: #f4bcb4;
+  border: none;
+  font-family: "Montserrat";
+  border-radius: 50px;
+  margin-top: -60px;
+  margin-left: -50px;
+  transition: all 0.4s ease;
+}
+.cta:hover {
+  transform: scale(1.2);
+}
+
+.entretien {
+  max-width: 150px;
+  height: 100px;
+  font-weight: 700;
+  background: #cce9f2;
+  border-radius: 30px;
+  margin-top: -70px;
+  margin-left: 250px;
+  transition: all 0.4s ease;
+}
+.entretien:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 880px) {
+  .produitFiche {
+    flex-direction: column;
+  }
+  .fiche_Prd_G,
+.fiche_Prd_D {
+    width: 95%;
+  }
+  .fiche_Prd_G {
+    margin-bottom: 40px;
+  }
+  .cta {
+    max-width: 110px;
+    margin-top: -40px;
+    margin-left: 0px;
+  }
+  .entretien {
+    max-width: 150px;
+    height: 100px;
+    margin-top: -100px;
+  }
+}
+/* <!-- /////////////// Partie Coup de coeur/////////////// --> */
+.Cp_Coeur_Title {
+  margin-top: 50px;
+}
+
+.Em_Product_Cp_Coeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.img_carte-Cp_Coeur {
+  height: 500px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.img_carte-Cp_Coeur:hover {
+  transform: scale(1.1);
+}
+
+.carte-Cp_Coeur {
+  max-width: 220px;
+  height: 220px;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .Em_Product_Cp_Coeur {
+    margin-bottom: 20px;
+  }
+  .carte-Cp_Coeur {
+    max-width: 90px;
+    height: 90px;
+  }
+}
+.retour {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+}
+.retour div {
+  display: flex;
+  width: 150px;
+}
+.retour div a {
+  text-decoration: none;
+  display: flex;
+}
+.retour div a p {
+  color: #2d4899;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.retour div a i {
+  font-size: 15px;
+  color: #2d4899;
+  margin-top: 10px;
+}/*# sourceMappingURL=style-produit.css.map */

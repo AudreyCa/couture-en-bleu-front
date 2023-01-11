@@ -1,0 +1,372 @@
+/* Police Montserrat */
+/* Police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Police "Brittany Signature" */
+@font-face {font-family: 'Brittany Signature'; src: url('../../css/police/BrittanySignature.ttf');}
+
+body {
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Partie Header sans le menu */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #cce9f2c8;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+  
+header .AC_logoHeader {
+     margin-left: 5%;
+}
+  
+.AC_logoHeader img {
+   max-width: 80px;
+}
+  
+.AC_panier .fa-solid {
+   color: #2d4899;
+   font-size: 30px;
+}
+
+.AC_panier .fa-solid:hover {
+    font-size: 32px;
+    transform-origin: center;
+    transition: .6s;
+}
+
+.ac_facebook-CTA {
+    display: none;
+}
+
+.ac_instagram-CTA {
+    display: none;
+}
+
+/* début du média query pour le header (juste la place des icones au format desktop) */
+@media screen and (min-width: 700px) {
+
+    header .AC_logoHeader {
+        position: absolute;
+        bottom: 50%;
+        left: calc(50% - 80px);
+        transform: translate(50%, 50%);
+        margin-left: 0;
+        
+   }
+
+   .AC_panier .fa-solid {
+        position: absolute;
+        bottom: 50%;
+        left: 40px;
+        transform: translate(50%, 50%);
+    }
+
+    .ac_facebook-CTA {
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: calc(30% - 15px);
+        transform: translate(50%, 50%);
+        font-size: 20px;
+    }
+
+    .ac_facebook-CTA a {
+        color:#2d4899;
+    }
+
+    .ac_facebook-CTA a:hover {
+        color:#9ebad7;
+        transition: all .3s;
+    }
+    
+    .ac_instagram-CTA {
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: calc(70% - 15px);
+        transform: translate(50%, 50%);
+        font-size: 20px;
+    }
+
+    .ac_instagram-CTA a {
+        color:#2d4899;
+    }
+
+    .ac_instagram-CTA a:hover {
+        color:#9ebad7;
+        transition: all .3s;
+    }
+
+}
+
+
+
+
+
+
+
+/* Fin partie Header sans le menu*/
+
+/* Partie juste pour le menu */
+
+#AC_menu {
+    text-align:center;
+    padding:30px 5%;
+} 
+
+#AC_cssmenu {
+    width:auto;
+    display:block;
+    text-align:center;
+    line-height: 50px;
+}
+
+/* les titres du menu */
+
+#AC_cssmenu ul {
+    width:auto;
+    display:block;
+    text-align:center;
+    margin:0; 
+    padding:0;
+    list-style:none;
+    position:relative;
+    z-index:999999990;
+} 
+
+#AC_cssmenu li {
+    display:inline-block;
+    position:relative;
+}
+
+#AC_cssmenu >ul>li>a {   
+    font-size:20px;
+    color: #fff;
+    text-decoration:none;
+    padding: 12px 20px;
+    font-weight: 400;
+    text-transform:none;
+    display:block;   
+    position:relative;
+    transition:all 0.3s;
+}
+
+#AC_cssmenu li:hover > a
+{  
+    color: #F9DBD8;
+    letter-spacing: 3px;
+    transition: .6s;
+}
+
+.AC_menu-icon {
+    display: none;
+}
+
+/* Début media query : pour l'affichage du menu en plein écran */
+@media only screen and (max-width: 99999px) {
+
+    .AC_menu-icon {
+        display:inline-block;
+    }
+
+    #AC_cssmenu {
+        width:100%;
+        max-width:100%;
+        display:none;
+        background-color:#2d4899;
+        box-sizing:border-box;
+        z-index:999999990;
+    }
+
+    #AC_cssmenu  {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        height:100%!important;
+        transition:all 411ms cubic-bezier(.7, 0,1,.4);
+    }
+
+    #AC_cssmenu.active {
+        top:0;
+        transition:all 411ms cubic-bezier(.16,.76,.45,1);
+    }
+
+    .AC_menu-icon.active {
+        position:fixed;
+        top:12px;
+        right:12px;
+        z-index:1000000006;
+    }
+
+    #AC_cssmenu ul {
+        background-color:transparent;
+        transition:all 411ms ease;
+        box-sizing:border-box;
+        border:none;
+    }
+
+    #AC_cssmenu .mobileHide {
+        display:none;
+    }
+
+    #AC_cssmenu li {
+        text-align:center;
+        display:block;
+        position:static;
+    }
+
+    #AC_cssmenu >ul>li>a {       
+        font-size:35px;
+    }
+
+    #AC_cssmenu >ul>li:nth-child(1) {       
+        padding-top: 30px;
+    }
+
+    /* Icones du bas du menu pleine page */
+
+    .AC_iconsMenu {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .AC_iconsMenu i {
+        color : white;
+        font-size: 30px;
+        margin: 0 20px 40px 20px;
+    }
+
+    .AC_iconsMenu i:hover {
+        transform: scale(1.2);
+        transition: .4s;
+    }
+
+    .AC_iconsMenu div {
+        width: 50px;
+    }
+
+    /* Fin : Icones du bas du menu pleine page */
+}
+/* Fin media query du menu pleine page */
+
+
+/* Icone menu burger et croix */
+.AC_menu-icon-wrapper {
+    padding:5px;
+}
+
+.AC_menu-icon {
+    outline: none;
+    background-color:transparent;
+    border:1px solid transparent;
+    border-radius:3px;
+    transition: all 0.25s ease-out;
+    user-select:none;
+    box-sizing:content-box;
+    font-size:0;
+    position:relative;
+}
+
+.AC_menu-icon.active{
+    background-color:transparent;
+    margin-top: 30px;   
+}
+
+.AC_three-line{
+  width: 28px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  /* margin-right: 20px; */
+}
+
+.AC_three-line span{
+  background-color: #2d4899;
+  position: absolute;
+  border-radius: 10px;
+  transition: transform .5s ease-in-out;
+  width:100%;
+  height: 3px;
+  left: 0;
+  transform: rotate(0);
+}
+
+.AC_three-line:hover span {
+transform: scale(1.3);
+  }
+
+.AC_three-line span:nth-child(1){
+  top:0;
+}
+
+.AC_three-line span:nth-child(2){
+  top: 8px;
+}
+
+.AC_three-line span:nth-child(3){
+  bottom:0;
+}
+
+.AC_menu-icon.active .AC_three-line span:nth-child(1){
+  transform: rotate(225deg);
+  top: 5px;
+  background-color: #fff;
+}
+.AC_menu-icon.active .AC_three-line span:nth-child(2){
+  transform: rotate(180deg);
+  visibility:hidden;
+  background-color: #fff;
+}
+.AC_menu-icon.active .AC_three-line span:nth-child(3){
+  transform: rotate(315deg);
+  top: 5px;
+  background-color: #fff;
+}
+
+/* Icones de RS et panier du menu */
+/* ........................................... */
+
+
+/* Animation de l'icone menu */
+
+@keyframes topItemAnimation{
+  from {
+    opacity:0;
+    transform:translate3d(0, -10vh, 0);
+}
+  to {
+    opacity:1;
+    transform:translate3d(0, 0, 0);
+}
+}
+
+#AC_cssmenu li a {animation:none;}
+#AC_cssmenu.active li a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.15s backwards;}
+#AC_cssmenu.active li:nth-of-type(1) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.9s backwards;}
+#AC_cssmenu.active li:nth-of-type(2) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.75s backwards;}
+#AC_cssmenu.active li:nth-of-type(3) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.6s backwards;}
+#AC_cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.45s backwards;}
+#AC_cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.3s backwards;}
