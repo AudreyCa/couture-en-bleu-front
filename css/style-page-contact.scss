@@ -132,7 +132,7 @@ h1 {
 #ac_input4 {
     display: none;
 }
-
+// ici, quand j'ouvre la liste de la question, pour chaque, le ronde se déplace doucement vers la droite.
 #ac_input1:checked + .ac_rondQR,
 #ac_input2:checked + .ac_rondQR,
 #ac_input3:checked + .ac_rondQR,
@@ -140,21 +140,21 @@ h1 {
     transform : translateX(265px) rotate(360deg);
     transition: all 1.5s ease;
 }
-
+// ici, quand j'ouvre la liste de la question, pour chaque, le ronde se déplace doucement vers la droite. La lettre Q disparait
 #ac_input1:checked + .ac_rondQR .ac_lettreQ,
 #ac_input2:checked + .ac_rondQR .ac_lettreQ,
 #ac_input3:checked + .ac_rondQR .ac_lettreQ,
 #ac_input4:checked + .ac_rondQR .ac_lettreQ {
     display: none;
 }
-
+// ici, quand je la liste de la question, pour chaque, le ronde se déplace doucement vers la droite. La lettre R apparait
 #ac_input1:checked + .ac_rondQR .ac_lettreR,
 #ac_input2:checked + .ac_rondQR .ac_lettreR,
 #ac_input3:checked + .ac_rondQR .ac_lettreR,
 #ac_input4:checked + .ac_rondQR .ac_lettreR {
     display: block;
 }
-
+// Quand j'ouvre la liste, apparition de la réponse avec animation
 #ac_input1:checked ~ .ac_reponse p,
 #ac_input2:checked ~ .ac_reponse p,
 #ac_input3:checked ~ .ac_reponse p,
@@ -164,14 +164,14 @@ h1 {
     font-size: 13px;
     transition: all .8s ease-in-out;
 }
-
+// Quand j'ouvre la liste, l'icone chevron vers le bas disparait
 #ac_input1:checked ~ .ac_teteQuestion .fa-chevron-down,
 #ac_input2:checked ~ .ac_teteQuestion .fa-chevron-down,
 #ac_input3:checked ~ .ac_teteQuestion .fa-chevron-down,
 #ac_input4:checked ~ .ac_teteQuestion .fa-chevron-down {
     display: none;
 }
-
+// Quand j'ouvre la liste, l'icone chevron vers le haut apparait
 #ac_input1:checked ~ .ac_teteQuestion .fa-chevron-up,
 #ac_input2:checked ~ .ac_teteQuestion .fa-chevron-up,
 #ac_input3:checked ~ .ac_teteQuestion .fa-chevron-up,
