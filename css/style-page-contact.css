@@ -81,7 +81,7 @@ h1 {
   color: White;
   transition: all 1.5s ease;
 }
-.ac_rondQR .ac-lettreR {
+.ac_rondQR .ac_lettreR {
   display: none;
 }
 
@@ -137,17 +137,17 @@ h1 {
   transition: all 1.5s ease;
 }
 
-#ac_input1:checked + .ac_rondQR .ac-lettreQ,
-#ac_input2:checked + .ac_rondQR .ac-lettreQ,
-#ac_input3:checked + .ac_rondQR .ac-lettreQ,
-#ac_input4:checked + .ac_rondQR .ac-lettreQ {
+#ac_input1:checked + .ac_rondQR .ac_lettreQ,
+#ac_input2:checked + .ac_rondQR .ac_lettreQ,
+#ac_input3:checked + .ac_rondQR .ac_lettreQ,
+#ac_input4:checked + .ac_rondQR .ac_lettreQ {
   display: none;
 }
 
-#ac_input1:checked + .ac_rondQR .ac-lettreR,
-#ac_input2:checked + .ac_rondQR .ac-lettreR,
-#ac_input3:checked + .ac_rondQR .ac-lettreR,
-#ac_input4:checked + .ac_rondQR .ac-lettreR {
+#ac_input1:checked + .ac_rondQR .ac_lettreR,
+#ac_input2:checked + .ac_rondQR .ac_lettreR,
+#ac_input3:checked + .ac_rondQR .ac_lettreR,
+#ac_input4:checked + .ac_rondQR .ac_lettreR {
   display: block;
 }
 
